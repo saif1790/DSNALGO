@@ -5,7 +5,7 @@ public class DisapearingNumber
 {
     public static void main(String[] args) {
 
-        int a[] = {1,1,1,1,1,1};
+        int a[] = {1,1,1,1,1,1};//Disappeared Number from the list :[2, 3, 4, 5, 6]
         //calling findDisappearingNumber() and it will return list of integer number that is disappeared
        List<Integer> disappearingNumbers = findDisappearingNumber(a);
        //print list of disappeared number
