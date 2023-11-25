@@ -1,4 +1,7 @@
 //Kadanes Algorithm
+//Given an integer array nums, find the
+//subarray
+// with the largest sum, and return its sum.
 
 public class MaxSubArraySum2 {
     public static void main(String[] args) {
@@ -22,7 +25,7 @@ public class MaxSubArraySum2 {
         for(int i =1;i<a.length; i++)
         {
 
-            cur_max = Math.max(a[i],cur_max + a[i]);
+            cur_max = Math.max(a[i],(cur_max + a[i]));
 
             max_sum = Math.max(cur_max,max_sum);
         }
