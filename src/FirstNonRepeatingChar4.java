@@ -1,12 +1,11 @@
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FirstNonRepeatingChar {
+public class FirstNonRepeatingChar4 {
 
     public static void main(String[] args) {
 
-        String str = "dddddddddddddd";
+        String str = "jitender";
        int e = getFirstNonRepeatingChar(str);
 
        if(e == -1)

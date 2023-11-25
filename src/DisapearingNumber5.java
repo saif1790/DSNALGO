@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class DisapearingNumber
+public class DisapearingNumber5
 {
     public static void main(String[] args) {
 
@@ -29,10 +29,9 @@ public class DisapearingNumber
 
         //iterating an array to check the element > 0  that is not marked negative
         // and that is disappeared number
-        for(int i=0;i<size;i++)
-        {
-            if(a[i]>0)
-                results.add(i+1);
+        for(int i=0;i<size;i++) {
+            if (a[i] > 0)
+                results.add(i + 1);
         }
         return results;
     }

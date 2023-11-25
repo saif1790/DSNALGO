@@ -1,6 +1,6 @@
 //Kadanes Algorithm
 
-public class MaxSubArraySum {
+public class MaxSubArraySum2 {
     public static void main(String[] args) {
 
         int[] a = {-2, -5, 6, -2, -3, 1, 5, -6};

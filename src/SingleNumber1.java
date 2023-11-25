@@ -1,4 +1,4 @@
-public class SingleNumber
+public class SingleNumber1
 {
     public static void main(String[] args) {
 
