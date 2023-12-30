@@ -3,7 +3,7 @@ import java.util.Base64;
 public class MaskChar {
 
     public static void main(String[] args) {
-        String carNumber = "7290859582";
+        String carNumber = "786543889986";
         String s1 = maskChar(carNumber);
         System.out.println("Credit Card Number "+carNumber+" after masking : "+s1);
     }
