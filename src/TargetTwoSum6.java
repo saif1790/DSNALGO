@@ -5,9 +5,9 @@ public class TargetTwoSum6 {
     public static void main(String[] args) {
 
         ArrayList<Integer> arrayList = new ArrayList<>();
-        int[] a1 = {16, 4, 23, 8, 15, 42, 1, 2};
+        int[] a1 = {3,3};
 
-        int targetNumber = 25;
+        int targetNumber = 6;
         Integer[] copyArray = new Integer[a1.length];
         for (int i = 0; i < a1.length; i++)
             copyArray[i] = a1[i];

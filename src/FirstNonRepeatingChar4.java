@@ -8,13 +8,13 @@ public class FirstNonRepeatingChar4 {
 
     public static void main(String[] args) {
 
-        String str = "jitenderjitndr";
+        String str = "ajitenderjitndrz";
         int e = getFirstNonRepeatingChar(str);
 
         if (e == -1)
             System.out.println("All character are repeating in the given string :" + str + " :" + e);
         else
-            System.out.println("First Non repeating Char at index " + e + " in the string :" + str);
+            System.out.println("First Non repeating Char at index " + (e+1) + " in the string :" + str);
     }
 
     public static int getFirstNonRepeatingChar(String str) {

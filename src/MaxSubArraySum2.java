@@ -3,6 +3,8 @@
 //subarray
 // with the largest sum, and return its sum.
 
+import java.util.Optional;
+
 public class MaxSubArraySum2 {
     public static void main(String[] args) {
 
@@ -11,7 +13,6 @@ public class MaxSubArraySum2 {
         int max_sum = maxSubArraySum(a);
 
         System.out.println("max_sum :" + max_sum);
-
     }
 
     public static int maxSubArraySum(int[] a) {
@@ -22,12 +23,11 @@ public class MaxSubArraySum2 {
         //To store the maximum found at a position
         int cur_max = a[0];//-2
 
-        for(int i =1;i<a.length; i++)
-        {
+        for (int i = 1; i < a.length; i++) {
 
-            cur_max = Math.max(a[i],(cur_max + a[i]));
+            cur_max = Math.max(a[i], (cur_max + a[i]));
 
-            max_sum = Math.max(cur_max,max_sum);
+            max_sum = Math.max(cur_max, max_sum);
         }
 
 
