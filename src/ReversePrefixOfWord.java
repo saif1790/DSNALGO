@@ -1,9 +1,11 @@
+/*Solved using two pointer approach*/
+
 public class ReversePrefixOfWord {
 
     public static void main(String[] args) {
 
-        String word = "saifalam";
-        char prefix = 'm';
+        String word = "abdeexyzs";
+        char prefix = 'e';
         String s = reversePrefix(word, prefix);
         System.out.println("After prefix  :" + s);
     }
@@ -14,16 +16,13 @@ public class ReversePrefixOfWord {
         int first = 0;
         int end = prefixIndex;
         char temp;
-        if(end < 0)
-        {
+        if (end < 0) {
             return word;
         }
         while (first < end) {
             temp = chars[first];
-            chars[first] = chars[end];
-            chars[end] = temp;
-            first++;
-            end--;
+            chars[first++] = chars[end];
+            chars[end--] = temp;
         }
         String newString = new String(chars);
         System.out.println("Before prefix :" + word);

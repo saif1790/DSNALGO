@@ -8,7 +8,7 @@ import java.util.Optional;
 public class MaxSubArraySum2 {
     public static void main(String[] args) {
 
-        int[] a = {-2, -5, 6, -2, -3, 1, 5, -6};
+        int[] a = {5,4,-1,7,8};
 
         int max_sum = maxSubArraySum(a);
 
@@ -29,8 +29,6 @@ public class MaxSubArraySum2 {
 
             max_sum = Math.max(cur_max, max_sum);
         }
-
-
         return max_sum;
     }
 }

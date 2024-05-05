@@ -4,8 +4,12 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
 
+        int a[] = new int[5];
+        //int length = a.length;
+        System.out.println(a.length);
+
         int n = 100;
-        for(int i= 1; i<=n; i++) {
+        for(int i = 1; i <= n; i++) {
             boolean isPrimeNumber = isPrime(i);
             if(isPrimeNumber) {
                 System.out.println(i + "Number is prime");

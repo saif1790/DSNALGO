@@ -8,7 +8,7 @@ public class FirstNonRepeatingChar4 {
 
     public static void main(String[] args) {
 
-        String str = "ajitenderjitndrz";
+        String str = "jaitenderitndrz";
         int e = getFirstNonRepeatingChar(str);
 
         if (e == -1)
