@@ -4,20 +4,20 @@ public class LambdaTest{
 
     public static void main(String[] args) {
 
-        Runnable a = ()-> {
-            for(int i=1;i<=10;i++)
-            System.out.println(i);
+        Runnable a = () -> {
+            for (int i = 1; i <= 10; i++)
+                System.out.println(i);
         };
 
         Thread thread = new Thread(a);
         thread.run();
-        FunctionalInterfaceTest b = ()-> "Hello G";
+        FunctionalInterfaceTest b = () -> "hello";
 
-              //System.out.println(a.sum());
+
+
+        //System.out.println(a.sum());
               System.out.println(b.sum());
 
     }
-
-
 
 }
