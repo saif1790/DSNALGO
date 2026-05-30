@@ -9,16 +9,16 @@ public class TwoSum1  {
         System.out.println(Thread.currentThread().getName());
         int nums[] = {2,7,11,15};
         int resultIndices[] = twoSum(nums,9);
-        System.out.println(resultIndices);
+        System.out.println(Arrays.toString(resultIndices));
     }
 
         public static int[] twoSum(int[] nums, int target) {
 
-            System.out.println("Number before sorting :"+ nums);
+            System.out.println("Number before sorting :"+ Arrays.toString(nums));
             int left = 0;
             int right = nums.length - 1;
             Arrays.sort(nums);
-            System.out.println("Number before sorting :"+ nums);
+            System.out.println("Number after sorting :"+ Arrays.toString(nums));
 
             while(left < right)
             {

@@ -1,8 +1,7 @@
-package com.java8.feature.filter;
+package com.java8.feature.stream.filter;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Employee {
 

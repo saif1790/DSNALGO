@@ -1,11 +1,10 @@
-package com.java8.feature.filter;
+package com.java8.feature.stream.filter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /*Filter name which length > 3*/
 public class FilterDemo {
@@ -110,8 +109,9 @@ public class FilterDemo {
     System.out.println("Fruit Name Start with A : "+flattenList);
     for (String fruit : fruitsList.stream().flatMap(list1 -> list1.stream()).collect(Collectors.toList())) {
       System.out.println(fruit);
-
     }
+    int sum = list.stream().mapToInt(i -> i.getMark()).sum();
+    System.out.println("MMMMMMMMMMMMMMMMMMMMMMM +"+sum);
 
   }
 
